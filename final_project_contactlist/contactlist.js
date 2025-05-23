@@ -163,3 +163,4 @@ function displaycontacts() {
 function addcontacts() {
   new_contact.style.display = "block";
 }
+console.log("copy")
