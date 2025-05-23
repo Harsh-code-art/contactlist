@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactlist.css">
+    <title>Contact-List</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="detail_box">
+
+            <div class="search_contacts">
+
+                <div class="search_box">
+                    <img src="images/search.png" alt="">
+                    <input type="text" class="searching" placeholder="Search contacts">
+                </div>
+
+                
+            </div>
+
+            <div class="selections">
+                <select class="selection">
+                    <option value="SIM1">SIM1</option>
+                    <option value="SIM2">SIM2</option>
+                </select>
+            </div>
+            
+                <div class="all_contacts">
+                    <ul class="contact_list">
+                    </ul>
+                    <img src="images/addcontact.png" alt="Addcontact" class="addcontact">
+                </div>
+            
+
+        </div>
+        <div class="add_contacts">
+
+            <div class="top">
+                <img src="images/back.png" alt="" height="20px" class="back_img">
+                <h1>Create new contact</h1>
+                <h4 class="saves">save</h4>
+            </div>
+
+            <div class="display_image">
+
+                <input type="file" accept="image/*" class="insert_image" id="inputfile">
+                <div class="camera" onclick="document.querySelector('#inputfile').click();"></div>
+                <img src="images/addphoto.png" alt="addphoto" class="add_photo" onclick="document.querySelector('#inputfile').click();" >
+
+            </div>
+
+            <div class="select_sim_box">
+                <img src="images/sim.png" alt="">
+                <div class="saving">
+                    <label style="font-weight: bold; font-size: large;">saving to</label><br>
+
+                    <select class="select_sim">
+
+                        <option value="sim1">SIM1</option>
+                        <option value="SIM2">SIM2</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="enter_details">
+
+                <div class="profiles">
+                    <img src="images/profile.png" alt="profile" height="30px" class="user_photos">
+                    <input type="text" id="details" placeholder="Enter your First name">
+                    <input type="text" class="details" placeholder="Last name">
+                </div>
+
+                <div class="profiles">
+                    <img src="images/mobile.png" alt="profile" height="20px" class="user_photos">
+                    <input type="number" class="hide_detail" placeholder="Phone" max="10">
+                    <input type="number" class="hide_details" placeholder="Mobile">
+                </div>
+
+                <div class="profiles">
+                    <img src="images/mssg.png" alt="profile" height="20px" class="user_photos">
+                    <input type="email" class="email" placeholder="Email">
+                    <input type="email" class="hide_details" id="email" placeholder="Home">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="new_div">
+            <a href="contactlist.html">Back</a>
+            <ul class="all_detailss"></ul>
+        </div>
+    </div>
+
+    <script src="contactlist.js"></script>
+</body>
+
+</html>
